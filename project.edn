@@ -1,0 +1,5 @@
+{:project     clj-stellar-sdk
+ :version     "0.0.1-SNAPSHOT"
+ :description "Stellar client library."
+ :url         "https://github.com/xlm-sg/clj-stellar-sdk"
+ :scm         {:url "git@github.com:xlm-sg/clj-stellar-sdk.git"}}
