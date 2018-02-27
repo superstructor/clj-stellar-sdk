@@ -1,6 +1,6 @@
 (set-env!
   :exclusions   '[org.clojure/clojure]
-  :dependencies '[[seancorfield/boot-tools-deps "0.4.0" :scope "test"]]
+  :dependencies '[[seancorfield/boot-tools-deps "0.4.3" :scope "test"]]
   :repositories #(conj % ["clojars" {:url "https://clojars.org/repo/"
                                      :username (get-sys-env "CLOJARS_USER" :required)
                                      :password (get-sys-env "CLOJARS_PASS" :required)}]))
