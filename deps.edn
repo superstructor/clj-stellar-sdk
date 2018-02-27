@@ -1,3 +1,4 @@
 {:paths ["src"]
- :deps  {org.clojure/clojure {:mvn/version "1.9.0"
-                              :scope "provided"}}}
+ :deps  {org.clojure/clojure              {:mvn/version "1.9.0"
+                                           :scope       "provided"}
+         stellar/java-stellar-sdk         {:mvn/version "0.2.0"}}}
