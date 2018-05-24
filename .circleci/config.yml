@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/project
+    docker:
+      - image: circleci/clojure:boot-2.7.2
+    steps:
+      - checkout
+      - restore_cache:
+          key: project-{{checksum "boot.properties" }}-{{ checksum "build.boot" }}
+      - run: boot test
+      - save_cache:
+          paths:
+            - ~/.m2
+            - ~/.boot/cache/lib
+            - ~/.boot/cache/bin
+          key: project-{{checksum "boot.properties" }}-{{ checksum "build.boot" }}
+    environment:
+      BOOT_JVM_OPTIONS: "-Xms512m -Xmx1024m"
+      BOOT_WATCHERS_DISABLE: "yes"
