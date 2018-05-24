@@ -10,6 +10,14 @@ clj-stellar-sdk is a Clojure and ClojureScript library for communicating with a
 [Stellar Horizon server](https://github.com/stellar/horizon). It is used for
 building Stellar apps either on the JVM, Node.js or in the browser.
 
+## Donations
+
+Stellar Lumens (XLM) address:
+
+```
+GBTYXS544T4YTTOQX6WHFLQHROLU2KJM7D2LA2VQPTCP4PT4EHFM7VVM
+```
+
 ## License
 
 Copyright © 2018 Isaac Johnston and [contributors](https://github.com/xlm-sg/clj-stellar-sdk/contributors).
