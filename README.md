@@ -1,3 +1,6 @@
+
+[![GitHub license](https://img.shields.io/github/license/xlm-sg/clj-stellar-sdk.svg)](LICENSE.txt)
+
 clj-stellar-sdk
 ===============
 
