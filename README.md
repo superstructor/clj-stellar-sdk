@@ -1,4 +1,5 @@
 
+[![Clojars Project](https://img.shields.io/clojars/v/clj-stellar-sdk.svg)](https://clojars.org/clj-stellar-sdk)
 [![CircleCI](https://circleci.com/gh/xlm-sg/clj-stellar-sdk/tree/master.svg?style=svg)](https://circleci.com/gh/xlm-sg/clj-stellar-sdk/tree/master)
 [![GitHub license](https://img.shields.io/github/license/xlm-sg/clj-stellar-sdk.svg)](LICENSE.txt)
 
