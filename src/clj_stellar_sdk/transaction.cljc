@@ -1,12 +1,12 @@
 (ns clj-stellar-sdk.transaction
   #?(:clj
      (:import
-       [org.stellar.sdk Transaction$Builder])))
+       [org.stellar.sdk KeyPair Server Transaction$Builder])))
 
 (defn submit!
-  ([server source operations]
+  ([^Server server ^KeyPair source operations]
    (submit! server source operations [source]))
-  ([server source operations signers]
+  ([^Server server ^KeyPair source operations signers]
    (let [source-account (-> server (.accounts) (.account source))
          builder        (new Transaction$Builder source-account)]
      (doseq [operation operations]

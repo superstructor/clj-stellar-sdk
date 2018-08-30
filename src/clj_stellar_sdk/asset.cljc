@@ -1,12 +1,12 @@
 (ns clj-stellar-sdk.asset
   #?(:clj
      (:import
-      [org.stellar.sdk Asset AssetTypeNative])))
+      [org.stellar.sdk Asset AssetTypeNative KeyPair])))
 
 (defn create
-  [code issuer]
+  [^String code ^KeyPair issuer]
   (Asset/createNonNativeAsset code issuer))
 
 (defn native
-  []
+  ^AssetTypeNative []
   (new AssetTypeNative))

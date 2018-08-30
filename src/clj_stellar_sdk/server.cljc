@@ -6,13 +6,13 @@
 (def public-uri "https://horizon.stellar.org/")
 
 (defn from-uri
-  [uri]
+  ^Server [^String uri]
   (new Server uri))
 
 (defn testnet
-  []
+  ^Server []
   (from-uri testnet-uri))
 
 (defn public
-  []
+  ^Server []
   (from-uri public-uri))

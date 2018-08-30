@@ -10,7 +10,7 @@
 
 (defn from-secret-seed
   "Returns a new Stellar KeyPair from a strkey encoded Stellar secret seed."
-  [seed]
+  ^KeyPair [^String seed]
   (KeyPair/fromSecretSeed (char-array seed)))
 
 (defn random
@@ -20,7 +20,7 @@
 
 (defn sign?
   "Returns true if keypair is capable of signing."
-  [keypair]
+  [^KeyPair keypair]
   (.canSign keypair))
 
 (defn account-id

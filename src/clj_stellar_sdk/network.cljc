@@ -5,18 +5,18 @@
 
 (defn current
   "Returns currently selected network."
-  []
+  ^Network []
   (Network/current))
 
 (defn id
   "Returns Network ID. Network ID is SHA-256 of network passphrase."
-  [network]
+  ^String [^Network network]
   #?(:clj (String/valueOf (.getNetworkId network))
      :cljs (.networkId network)))
 
 (defn passphrase
   "Returns network passphrase."
-  [network]
+  ^String [^Network network]
   #?(:clj (.getNetworkPassphrase network)
      :cljs (.networkPassphrase network)))
 
@@ -32,5 +32,5 @@
 
 (defn use-passphrase!
   "Use the network with the given passphrase."
-  [passphrase]
+  [^String passphrase]
   (Network/use (new Network passphrase)))
