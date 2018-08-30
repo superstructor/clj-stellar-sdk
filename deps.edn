@@ -2,5 +2,6 @@
  :deps      {org.clojure/clojure                 {:mvn/version "1.9.0"
                                                   :scope       "provided"}
              com.github.stellar/java-stellar-sdk {:mvn/version "0.3.2"}}
+ :aliases   {:test {:extra-paths ["test"]}}
  :mvn/repos {"maven-central" {:url "https://repo1.maven.org/maven2"}
              "jitpack"       {:url "https://jitpack.io"}}}
